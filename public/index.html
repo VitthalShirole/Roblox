@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+       function Dispaly(){
+           var arr= document.getElementById("pt").innerHTML;
+            for( var i=0; i<arr.length; i++){
+                if(arr[i].event){
+                    document.getElementById("mydiv").innerHTML+=arr[i];
+                }
+
+  
+            }
+       }
+    </script>
+</head>
+<body>
+    <h1>Welcome to Roblox</h1>
+    <h4>Roblex is computer hardwarw parts provider company<br>
+        Establishet in 1990, Company has 7500 employee
+    </h4>
+   <table>
+    <form>
+        <tr><th>Parts</th><th>Prise</th></tr>
+        <tr><td>Cd</td><td>200</td><td><button type="submit">Add</button></td><td><button type="reset">Delete</button></td></tr> 
+        <tr><td>DVD</td><td>500</td><td><button type="submit">Add</button></td><td><button type="reset">Delete</button></tr></td></tr>
+        <tr><td>PenDrive</td><td>200</td><td><button type="submit">Add</button></td><td><button type="reset">Delete</button></td></tr>
+        <tr><td>Cable</td><td>100</td><td><button type="submit">Add</button></td><td><button type="reset">Delete</button></td></tr>
+    </form>
+    </table> 
+    <div>
+
+
+        <select name="parts" id="pt" onselect="Dispaly()">Parts
+        <option name="Parts" id="o1">--Select parts--</option>
+        <option name="Parts" id="o2">PC</option>
+        <option name="Parts" id="o3">Cd</option>
+        <option name="Parts" id="o4">DVD</option></select>
+    </div>
+    
+</body>
+</html>
